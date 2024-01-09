@@ -1,0 +1,22 @@
+/* YourComponent.css */
+.about_img{
+    max-width: 95%;    
+}
+
+.about_text_wrapper{
+margin: auto;
+ width: 35%;
+
+}
+.about_heading{
+    margin-right: auto;
+    font-size: 48px;
+}
+.about_heading2{
+font-size: 40px;
+margin-right: auto;
+}
+.about_text{
+    font-size: 20px;
+    color: white;
+}
