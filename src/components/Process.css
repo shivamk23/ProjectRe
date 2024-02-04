@@ -1,0 +1,41 @@
+.process_containrFluid{
+    background-color: #000;
+    padding: 3% 0px;
+margin-top: 2%;
+}
+.process_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.process_img{
+    width: 100%;
+    margin: auto;
+}
+.process_text_wrapper{
+    width: 35%;
+    margin: auto;
+}
+.process_flex_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+ 
+}
+@media (max-width: 767px) {
+    .process_container{
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    }
+    .process_text_wrapper{
+        width: 95%;
+        margin: auto;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+  }

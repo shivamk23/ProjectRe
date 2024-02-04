@@ -1,0 +1,41 @@
+.inno_fluid {
+    background-color: #D9D9D9;
+    padding: 10% 0px;
+    margin-top: 2%;
+}
+.inno_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.inno_text_wrapper{
+    width: 35%;
+    text-align: left;
+}
+.inno_text_para{
+    margin-top: 2rem;
+}
+.team_img{
+    width: 95%;
+}
+@media (max-width: 767px) {
+    .inno_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    .inno_text_wrapper{
+        width: 95%;
+        text-align: left;
+    }
+    .team_img{
+        width: 95%;
+        margin: auto;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+  }

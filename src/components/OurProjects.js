@@ -13,23 +13,23 @@ import "swiper/css/navigation";
 
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
 
-import slide_image_1 from "../assets/images/r1.png";
-import slide_image_2 from "../assets/images/r2.png";
-import slide_image_3 from "../assets/images/r3.png";
+import slide_image_1 from "../assets/r1.png";
+import slide_image_2 from "../assets/r2.png";
+import slide_image_3 from "../assets/r3.png";
 
 const OurProjects = () => {
   return (
-    <section id="projects" className="bg-dark text-light ">
-      <Container fluid style={{ background: "#000" }}>
-        <div className="project_wrapper" style={{ display: "flex" }}>
-          {/* <div className="project_text_wrapper">
+    <section id="projects" className="bg-dark text-light  ">
+      <Container className="project_containerFluid" fluid style={{ background: "#000" }}>
+        <Container className="project_content_container" >
+          <div className="project_text_wrapper">
             <wrapper>
-              <h1>
-                50 <span style={{ color: "#cc481d" }}>+ Projects</span>
+              <h1 className="page_heading">
+                50 <span style={{ color: "#BC3131" }}>+ Projects</span>
               </h1>
-              <h2>All Over The World</h2>
-              <p>
-                <span style={{ color: "#cc481d", fontWeight: "bold" }}>
+              <h2 className="page_heading2">All Over The World</h2>
+              <p className="page_text text">
+                <span style={{ color: "#BC3131", fontWeight: "bold" }}>
                   Design Connect Studio
                 </span>{" "}
                 raises the ante in terms of design quality in over 50+ projects
@@ -37,14 +37,15 @@ const OurProjects = () => {
                 approach to each vision will help transform it into reality.
                 Your dream space awaits.
               </p>
-              <p>
+              <p className="page_text mt-5">
                 Keep on designing spaces in extraordinary excellence as we
                 strive to reinvent the spaces.
               </p>
             </wrapper>
-          </div> */}
+          </div>
           <div className="project_img_wrapper">
-            <Swiper
+            <img className="project_img" src={require("../assets/project.png")} alt=""/>
+            {/* <Swiper
               effect={"coverflow"}
               grabCursor={true}
               centeredSlides={true}
@@ -96,77 +97,12 @@ const OurProjects = () => {
                 </div>
                 <div className="swiper-pagination"></div>
               </div>
-            </Swiper>
+            </Swiper> */}
           </div>
-        </div>
+        </Container>
       </Container>
 
-      <Container
-        fluid
-        className="d-flex flex-column flex-lg-row flex-md-row justify-content-between"
-        style={{ background: "black" }}
-      >
-        <div className="project_img_wrapper">
-          <img className="project_img" src="/Images/group.png" alt="" />
-        </div>
-        <div className="project_text_wrapper">
-          <wrapper>
-            <div>
-              <h1 className="project_heading">
-                <span style={{ color: "#cc481d" }}>Our Work Process</span>
-              </h1>
-              <h2 className="project_heading">Make Your Dream True</h2>
-              <ol className="project_text_list">
-                <li>
-                  Dream Design
-                  <p>Working with us to visualize your interior dream.</p>
-                </li>
-                <li>
-                  Expert Execution
-                  <p>
-                    Our talented team creates style and perfection out of your
-                    vision.
-                  </p>
-                </li>
-                <li>
-                  Client Delight
-                  <p>
-                    Your satisfaction at every step of the way is seamless
-                    journey.
-                  </p>
-                </li>
-              </ol>
-            </div>
-          </wrapper>
-        </div>
-      </Container>
-
-      <Container fluid style={{ background: "white" }}>
-        <div className="project_wrapper" style={{ display: "flex" }}>
-          <div className="project_text_wrapper">
-            <wrapper>
-              <h1 className="designer_text">
-                <span style={{ color: "#cc481d" }}>Design</span> <br />
-                Innovators
-              </h1>
-              <br />
-              <p className="designer_text">
-                <span style={{ color: "#cc481d", fontWeight: "bold" }}>
-                  Ar. Harshada Budhavant,
-                </span>{" "}
-                <br />a Pune University graduate, infuses Design Connect Studio
-                with subtle yet impactful designs, showcasing a commitment to
-                creativity that enhances every project she undertakes.
-              </p>
-            </wrapper>
-          </div>
-          <div className="project_img_wrapper">
-            <img className="image" src="/Images/pic1.png" alt="Image 1" />
-            <img className="image" src="/Images/pic2.png" alt="Image 2" />
-            <img className="image" src="/Images/pic3.png" alt="Image 3" />{" "}
-          </div>
-        </div>
-      </Container>
+      
     </section>
   );
 };
