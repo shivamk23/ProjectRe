@@ -1,0 +1,33 @@
+.App {
+  text-transform: capitalize !important;
+}
+
+.page_heading{
+  font-size: 42px;
+}
+.page_heading2{
+  font-size: 35px;
+}
+.page_text{
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+/*  */
+@media (max-width: 767px) {
+  .page_heading{
+  font-size: 20px;
+}
+.page_heading2{
+  font-size: 16px;
+}
+.page_text{
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+}

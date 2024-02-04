@@ -1,0 +1,121 @@
+/* styles.css */
+ .form_heading{
+  font-size: 25px;
+  font-weight: 500;
+  text-align: left;
+  margin-right: auto;
+  margin-left: 30px;
+ } 
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+width: 100%;
+color: #fff;
+background-color: #000;
+padding: 25px 25px;
+}
+
+.exp_field_group {
+margin: auto;
+width: auto;
+margin: 2rem auto 0px auto;
+position: relative;
+display: flex;
+align-items: center;
+color: #fff !important;
+
+}
+.field_errorbox{
+
+}
+.exp_form_fields {
+padding-top: 15px;
+font-size: 14px;
+font-weight: 500;
+padding-left: 10px;
+height: 50px;
+width: 400px;
+border-radius: 2px;
+background-color: #282828;
+color: #fff !important;
+border: none;
+outline: none;
+margin: auto;
+}
+.exp_form_fields:focus~label,
+.exp_form_fields:valid~label {
+padding-top: 2.5px;
+top: -3px;
+left: 5px;
+font-size: 14px;
+}
+.exp_form_fields:hover{
+color: #fff ;
+background-color: none;
+}
+
+.mssg_field {
+  font-size: 14px;
+font-weight: 500;
+  background-color: #282828;
+color: #ffffff !important;
+padding: 18px 14px 0px 10px;
+min-height: 50px;
+max-height: 55px;
+
+}
+.exp_form_labels {
+margin-left: 5px;
+position: absolute;
+top: 9px;
+left: 5px;
+font-size: 14px;
+pointer-events: none;
+transition: 0.2s;
+color: #fff;
+}
+.submit_btndiv{
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+margin-left: auto;
+margin-right: 45px;
+margin-top: 1rem;
+
+}
+.form_submit_btn {
+margin: 20px 0px 10px auto;
+background-color: #ffffff;
+color: #000;
+font-size: 16px;
+font-family: intern;
+padding: 5px 25px;
+border-radius: 30px;
+outline: none;
+border: none;
+width: auto;
+}
+.error {
+color: red;
+font-size: 14px;
+display: flex;
+justify-content: flex-start;
+}
+
+@media (max-width: 767px) {
+.form {
+width: 100%;
+}
+.exp_form_fields {
+  height: 50px;
+  width: 75vw;
+margin: auto ;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}

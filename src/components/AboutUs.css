@@ -1,0 +1,48 @@
+/* YourComponent.css */
+.about_containerFluid{
+    height: 620px;
+   background-color: #000;
+   margin-top: 5%;
+
+}
+.about_img_wrapper{
+width: auto;
+}
+.about_img{
+    max-width: 90%;
+    margin-right: auto;    
+}
+.about_heading_wrapper{
+margin: auto;
+ width: 41%;
+
+}
+.about_text_wrapper{
+width: 85%;
+margin-top: 5%;
+}
+@media (max-width: 767px) {
+    .about_containerFluid{
+        justify-content: center !important;
+        height: auto;
+       background-color: #000;
+       gap: 1.5rem;
+       padding-bottom: 15px;
+    }
+    .about_img{
+        max-width: 100%;
+        margin: auto;    
+    }
+    .about_heading_wrapper{
+        width: 98%;
+        margin-left: 2%;
+        }
+        .about_text_wrapper{
+            width: 95%;
+            margin-top: 5%;
+            }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+  }

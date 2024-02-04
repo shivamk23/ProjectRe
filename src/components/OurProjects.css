@@ -1,0 +1,43 @@
+#projects{
+    margin-top: 5%;
+}
+.project_containerFluid{
+    padding: 25px 0px;
+}
+.project_content_container{
+    display: flex;
+}
+.project_text_wrapper{
+    width: 38%;
+    margin: auto;
+}
+.text{
+    margin-top: 5%;
+}
+.project_img_wrapper{
+    width: 45%;
+    margin-left: auto;
+}
+
+.project_img {
+    width: 100%;
+}
+@media (max-width: 767px) {
+    .project_content_container{
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .project_text_wrapper{
+        width: 95%;
+        margin: auto;
+    }
+    .project_img_wrapper{
+     width: 95%;
+     margin: auto;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+  }
